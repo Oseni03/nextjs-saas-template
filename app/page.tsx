@@ -4,36 +4,51 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  return (
-    <>
-      <header className="absolute top-0 right-0 flex justify-end items-center p-4">
-        <ModeSwitcher />
-      </header>
-      <div className="flex flex-col gap-5 items-center justify-center h-screen px-5 text-center">
-        <Image
-          src="/better-auth-starter.png"
-          alt="Better Auth"
-          width={100}
-          height={100}
-          className="rounded-lg dark:invert"
-        />
+	return (
+		<div className="relative min-h-screen bg-gray-50 dark:bg-gray-900">
+			<header className="absolute top-0 right-0 flex items-center justify-end p-4">
+				<ModeSwitcher />
+			</header>
 
-        <h1 className="text-4xl font-bold">Better Auth Starter</h1>
+			<main className="flex min-h-screen flex-col items-center justify-center px-4 text-center sm:px-6 lg:px-8">
+				<div className="space-y-8">
+					<Image
+						src="/better-auth-starter.png"
+						alt="Better Auth"
+						width={120}
+						height={120}
+						className="mx-auto rounded-2xl dark:invert"
+					/>
 
-        <p className="text-lg">
-          This is a starter project for Better Auth. It is a simple project that
-          uses Better Auth to authenticate users.
-        </p>
+					<div className="space-y-4">
+						<h1 className="text-4xl font-bold tracking-tighter text-gray-900 dark:text-white sm:text-5xl">
+							Better Auth Starter
+						</h1>
 
-        <div className="flex gap-2">
-          <Link href="/login">
-            <Button>Login</Button>
-          </Link>
-          <Link href="/signup">
-            <Button>Signup</Button>
-          </Link>
-        </div>
-      </div>
-    </>
-  );
+						<p className="mx-auto max-w-xl text-lg text-gray-600 dark:text-gray-300">
+							A modern authentication starter with a clean,
+							monochromatic design. Built with Next.js, Shadcn UI,
+							and Better Auth for a seamless auth experience.
+						</p>
+					</div>
+
+					<div className="flex items-center justify-center gap-4">
+						<Link href="/login">
+							<Button
+								variant="outline"
+								className="border-gray-300 bg-white hover:bg-gray-50 dark:border-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+							>
+								Sign in
+							</Button>
+						</Link>
+						<Link href="/signup">
+							<Button className="bg-gray-900 hover:bg-gray-800 text-white dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-200">
+								Create account
+							</Button>
+						</Link>
+					</div>
+				</div>
+			</main>
+		</div>
+	);
 }

@@ -1,0 +1,52 @@
+{
+	"name": "monochrome",
+	"type": "dark",
+	"colors": {
+		"--primary": {
+			"50": "#f9fafb",
+			"100": "#f3f4f6",
+			"200": "#e5e7eb",
+			"300": "#d1d5db",
+			"400": "#9ca3af",
+			"500": "#6b7280",
+			"600": "#4b5563",
+			"700": "#374151",
+			"800": "#1f2937",
+			"900": "#111827",
+			"950": "#030712"
+		},
+		"--background": {
+			"DEFAULT": "#030712",
+			"foreground": "#f9fafb"
+		},
+		"--card": {
+			"DEFAULT": "#1f2937",
+			"foreground": "#f9fafb"
+		},
+		"--popover": {
+			"DEFAULT": "#1f2937",
+			"foreground": "#f9fafb"
+		},
+		"--muted": {
+			"DEFAULT": "#374151",
+			"foreground": "#9ca3af"
+		},
+		"--accent": {
+			"DEFAULT": "#4b5563",
+			"foreground": "#f9fafb"
+		},
+		"--destructive": {
+			"DEFAULT": "#991b1b",
+			"foreground": "#f9fafb"
+		},
+		"--border": "#374151",
+		"--input": "#374151",
+		"--ring": "#1f2937"
+	},
+	"cssVars": {
+		"--radius": "0.5rem",
+		"--radius-sm": "0.25rem",
+		"--radius-lg": "0.75rem",
+		"--radius-xl": "1rem"
+	}
+}

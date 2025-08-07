@@ -15,9 +15,16 @@ export default async function Dashboard() {
   const organizations = await getOrganizations();
 
   return (
-    <div className="flex flex-col gap-2 items-center justify-center h-screen">
-      <Dialog>
-        <DialogTrigger asChild>
+    <div className="space-y-6">
+      <div>
+        <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
+        <p className="text-muted-foreground">
+          Welcome to your dashboard
+        </p>
+      </div>
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <Dialog>
+          <DialogTrigger asChild>
           <Button variant="outline">Create Organization</Button>
         </DialogTrigger>
         <DialogContent>
